@@ -1,0 +1,18 @@
+// フォント
+
+// font-family: Noto Sans JP;
+@mixin sans {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+// font-family: roboto;
+//使う時は @include roboto;
+@mixin roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
