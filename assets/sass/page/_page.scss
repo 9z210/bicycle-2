@@ -171,50 +171,48 @@ body {
   }
 }
 
-@mixin sp {
-  @media(min-width: 600px) {
-    @content
-  }
-}
-
-.hero {
-  &-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 80px;
-  }
-}
-
-.about {
-
-  &-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-  }
-}
-
-.bicycle {
-  margin-bottom: 120px;
-  padding: 0 2.6%;
-  &-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+@include sp {
+  .hero {
+    &-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: s(80);
+    }
   }
 
-  &-item {
-    padding-bottom: 20px;
+  .about {
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
   }
 
-  &-img {
-    width: 100%;
-  }
+  .bicycle {
+    margin-bottom: s(120);
+    padding: 0 2.6%;
+    flex-wrap: wrap;
 
-  &-name {
-    padding:12px;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &-item {
+      padding-bottom: s(20);
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-name {
+      padding: s(12);
+    }
   }
 }

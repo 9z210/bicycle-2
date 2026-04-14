@@ -709,51 +709,53 @@ body {
   font-size: 0.5rem;
 }
 
-.hero-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 80px;
-}
-
-.about-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 0;
-}
-
-.bicycle {
-  margin-bottom: 120px;
-  padding: 0 2.6%;
-}
-.bicycle-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-}
-.bicycle-item {
-  padding-bottom: 20px;
-}
-.bicycle-img {
-  width: 100%;
-}
-.bicycle-name {
-  padding: 12px;
+@media screen and (max-width: 767px) {
+  .hero-img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 18.6046511628vw;
+  }
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0;
+  }
+  .bicycle {
+    margin-bottom: 27.9069767442vw;
+    padding: 0 2.6%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bicycle-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .bicycle-item {
+    padding-bottom: 4.6511627907vw;
+  }
+  .bicycle-img {
+    width: 100%;
+  }
+  .bicycle-name {
+    padding: 2.7906976744vw;
+  }
 }
