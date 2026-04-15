@@ -555,6 +555,7 @@ h6 {
 -------------------------*/
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -564,7 +565,7 @@ body {
 }
 
 .header-inner {
-  max-width: 980px;
+  max-width: 960px;
   padding: 0 4%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,8 +579,9 @@ body {
   margin: 0 auto;
 }
 .header-img {
-  width: 140px;
-  padding: 10px;
+  max-width: 120px;
+  width: 100%;
+  padding: 10px 0;
 }
 
 /* ----------------------------
@@ -592,9 +594,9 @@ body {
   gap: 30px;
 }
 .nav li {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 400;
-  font-family: "Segoe UI", sans-serif;
+  color: #383e45;
 }
 .nav a {
   color: #000000;
@@ -610,7 +612,7 @@ body {
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 80px;
+  margin-bottom: 84px;
 }
 
 .about {
@@ -627,7 +629,7 @@ body {
   font-weight: bold;
   margin: 0;
   margin-bottom: 60px;
-  color: #383145;
+  color: #383e45;
 }
 .about-content {
   display: -webkit-box;
@@ -642,7 +644,8 @@ body {
   gap: 30px;
 }
 .about-img {
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
   border-radius: 50%;
   display: block;
 }
@@ -665,57 +668,77 @@ body {
 
 .bicycle {
   text-align: center;
-  max-width: 980px;
-  margin: 0 auto 80px;
-  padding: 0 4%;
+  max-width: 880px;
+  margin: 0 auto 93px;
 }
 .bicycle-title {
   font-size: 2rem;
-  border-bottom: 1px solid #383145;
+  border-bottom: 1px solid #383e45;
   display: inline-block;
   font-weight: bold;
-  margin: 0 0 50px;
-  color: #383145;
+  margin: 0 0 60px;
+  color: #383e45;
 }
 .bicycle-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 830px;
-  margin: 0 auto;
+  gap: 16px;
+  padding: 0 4%;
 }
 .bicycle-item {
-  padding: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .bicycle-img {
-  width: 260px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .bicycle-name {
   font-size: 1rem;
   font-weight: bold;
-  padding: 10px;
+  margin: 14px 0 10px;
 }
 .bicycle-text {
-  font-size: 14px;
+  font-size: 0.9rem;
   margin: 0;
   font-weight: 380;
 }
 
 .footer {
   text-align: center;
-  padding: 8px 0;
+  padding: 7px 0;
 }
 .footer-text {
   font-size: 0.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 600px) {
+  .header-inner {
+    padding: 0 4%;
+  }
+  .header-img {
+    max-width: 120px;
+    width: 100%;
+    margin: 0;
+  }
   .hero-img {
     width: 100%;
-    height: auto;
+    height: calc(100vh - 60px);
     -o-object-fit: cover;
        object-fit: cover;
-    margin-bottom: 18.6046511628vw;
+    margin-bottom: 13.9534883721vw;
+  }
+  .about-title {
+    font-size: 32px;
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 60px;
+    color: #383e45;
   }
   .about-content {
     display: -webkit-box;
@@ -734,28 +757,19 @@ body {
     gap: 0;
   }
   .bicycle {
-    margin-bottom: 27.9069767442vw;
-    padding: 0 2.6%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    margin-bottom: 16.2790697674vw;
   }
   .bicycle-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto;
+    padding: 0 4% 12px;
   }
   .bicycle-item {
-    padding-bottom: 4.6511627907vw;
+    padding-bottom: 2.3255813953vw;
   }
   .bicycle-img {
     width: 100%;
-  }
-  .bicycle-name {
-    padding: 2.7906976744vw;
   }
 }
