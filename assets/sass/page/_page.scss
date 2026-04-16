@@ -7,14 +7,7 @@
 /* -----------------------
   header
 -------------------------*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  line-height: normal;
-  font-style: normal;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -53,11 +46,10 @@ body {
 
   a {
     color: $black;
-  }
-
-  a:hover {
-    cursor: pointer;
-    color: $point01;
+    &:hover {
+      cursor: pointer;
+      color: $point01;
+    }
   }
 }
 
@@ -175,7 +167,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@include sp {
   .header {
     &-inner {
       padding: 0 4%;
@@ -205,7 +197,7 @@ body {
       font-weight: bold;
       margin: 0;
       margin-bottom: 60px;
-      color: $title-color
+      color: $title-color;
     }
 
     &-content {
@@ -219,7 +211,6 @@ body {
 
   .bicycle {
     margin-bottom: s(70);
-  
 
     &-content {
       flex-direction: column;
@@ -233,6 +224,5 @@ body {
     &-img {
       width: 100%;
     }
-
   }
 }
